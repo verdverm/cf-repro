@@ -1,0 +1,59 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"] 
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model user {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  did    String @unique
+  handle String @unique
+}
+
+model oauth_state {
+  // id         Int      @id @default(autoincrement())
+  // created_at DateTime @default(now())
+  // expires_at DateTime
+
+  key        String @id
+  state      String
+
+  // iss      String
+  // did      String
+  // username String
+
+  // nonce            String
+  // pkce_verifier    String
+  // dpop_private_jwk String
+  // dpop_public_jwk  String
+}
+
+model oauth_session {
+  // id         Int      @id @default(autoincrement())
+  // created_at DateTime @default(now())
+  // expires_at DateTime
+
+  key      String @id
+  session  String
+
+  // iss      String
+  // did      String
+  // username String
+
+  // dpop_nonce       String
+  // dpop_private_jwk String
+  // dpop_public_jwk  String
+
+  // access_token  String
+  // refresh_token String
+}
