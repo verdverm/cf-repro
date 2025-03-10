@@ -1880,7 +1880,7 @@
     escape-string-regexp "^4.0.0"
     rollup-plugin-node-polyfills "^0.2.1"
 
-"@esbuild-plugins/node-resolve@0.2.2", "@esbuild-plugins/node-resolve@^0.2.2":
+"@esbuild-plugins/node-resolve@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@esbuild-plugins/node-resolve/-/node-resolve-0.2.2.tgz#4f1b8d265a1b6e8b2438a03770239277687f0c17"
   integrity sha512-+t5FdX3ATQlb53UFDBRb4nqjYBz492bIrnVWvpQHpzZlu9BQL5HasMZhqc409ygUwOWCXZhrWr6NyZ6T6Y+cxw==
@@ -2923,16 +2923,15 @@
   resolved "https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
-"@opennextjs/aws@https://pkg.pr.new/@opennextjs/aws@722":
-  version "3.4.1"
-  resolved "https://pkg.pr.new/@opennextjs/aws@722#948cd01bf5687bcb4c8a4d8fffcdd9802fe71e5c"
+"@opennextjs/aws@https://pkg.pr.new/@opennextjs/aws@756":
+  version "3.4.2"
+  resolved "https://pkg.pr.new/@opennextjs/aws@756#549d0e9f32363f3cc97b44d5d49b674a82e32d2c"
   dependencies:
     "@aws-sdk/client-cloudfront" "3.398.0"
     "@aws-sdk/client-dynamodb" "^3.398.0"
     "@aws-sdk/client-lambda" "^3.398.0"
     "@aws-sdk/client-s3" "^3.398.0"
     "@aws-sdk/client-sqs" "^3.398.0"
-    "@esbuild-plugins/node-resolve" "0.2.2"
     "@node-minify/core" "^8.0.6"
     "@node-minify/terser" "^8.0.6"
     "@tsconfig/node18" "^1.0.1"
@@ -2941,20 +2940,18 @@
     esbuild "0.19.2"
     express "5.0.1"
     path-to-regexp "^6.3.0"
-    promise.series "^0.2.0"
     urlpattern-polyfill "^10.0.0"
 
-"@opennextjs/cloudflare@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.4.tgz#3d8d14e906ee939bcb34b27813fca6b0c43f0a67"
-  integrity sha512-PHSZepA9oVFE+HBWahfLiy9xMlWv5Y5Vjzf+Sg96ZDkN/Wlwmuh+1q6J1uN6g884uHUdxPXoCM/y3UnekMfqww==
+"@opennextjs/cloudflare@^0.5.10":
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.5.10.tgz#9038fe5a86cc8f2e1603918f1a17dd553b51491b"
+  integrity sha512-L/D472YT5OW1LwpFtD/aVXHJYcVPbFVX7XdphlUjCR4+2osSQIDnsuNgfDRydHMDJZMKxeZDc251ZBzUVKpCqw==
   dependencies:
     "@ast-grep/napi" "^0.34.1"
     "@dotenvx/dotenvx" "1.31.0"
-    "@opennextjs/aws" "https://pkg.pr.new/@opennextjs/aws@722"
+    "@opennextjs/aws" "https://pkg.pr.new/@opennextjs/aws@756"
     enquirer "^2.4.1"
     glob "^11.0.0"
-    ts-morph "^23.0.0"
     yaml "^2.7.0"
 
 "@opentelemetry/api-logs@0.57.1":
@@ -4713,16 +4710,6 @@
     mkdirp "^1.0.4"
     path-browserify "^1.0.1"
 
-"@ts-morph/common@~0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@ts-morph/common/-/common-0.24.0.tgz#9125b3d5ef9e2633cd6a54296b420b89366599c1"
-  integrity sha512-c1xMmNHWpNselmpIqursHeOHHBTIsJLbB+NuovbTTRCNiTLEr/U9dbJ8qy0jd/O2x5pc3seWuOUN5R2IoOTp8A==
-  dependencies:
-    fast-glob "^3.3.2"
-    minimatch "^9.0.4"
-    mkdirp "^3.0.1"
-    path-browserify "^1.0.1"
-
 "@tsconfig/node10@^1.0.7":
   version "1.0.11"
   resolved "https://registry.npmjs.org/@tsconfig/node10/-/node10-1.0.11.tgz"
@@ -5817,11 +5804,6 @@ code-block-writer@^11.0.3:
   version "11.0.3"
   resolved "https://registry.npmjs.org/code-block-writer/-/code-block-writer-11.0.3.tgz"
   integrity sha512-NiujjUFB4SwScJq2bwbYUtXbZhBSlY6vYzm++3Q6oC+U+injTqfPYFK8wS9COOmb2lueqp0ZRB4nK1VYeHgNyw==
-
-code-block-writer@^13.0.1:
-  version "13.0.3"
-  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-13.0.3.tgz#90f8a84763a5012da7af61319dd638655ae90b5b"
-  integrity sha512-Oofo0pq3IKnsFtuHqSF7TqBfr71aeyZDVJ0HpmqB7FBM2qEigL0iPONSCZSO9pE9dZTAxANe5XHG9Uy0YMv8cg==
 
 collapse-white-space@^2.0.0:
   version "2.1.0"
@@ -10070,11 +10052,6 @@ process@^0.11.10:
   resolved "https://registry.npmjs.org/process/-/process-0.11.10.tgz"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-promise.series@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/promise.series/-/promise.series-0.2.0.tgz#2cc7ebe959fc3a6619c04ab4dbdc9e452d864bbd"
-  integrity sha512-VWQJyU2bcDTgZw8kpfBpB/ejZASlCrzwz5f2hjb/zlujOEB4oeiAhHygAWq8ubsX2GVkD4kCU5V2dwOTaCY5EQ==
-
 promisepipe@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/promisepipe/-/promisepipe-3.0.0.tgz"
@@ -11325,14 +11302,6 @@ ts-morph@^16.0.0:
   dependencies:
     "@ts-morph/common" "~0.17.0"
     code-block-writer "^11.0.3"
-
-ts-morph@^23.0.0:
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/ts-morph/-/ts-morph-23.0.0.tgz#601d74edd1d24247e312b9fa5d147bdc659bff15"
-  integrity sha512-FcvFx7a9E8TUe6T3ShihXJLiJOiqyafzFKUO4aqIHDUCIvADdGNShcbc2W5PMr3LerXRv7mafvFZ9lRENxJmug==
-  dependencies:
-    "@ts-morph/common" "~0.24.0"
-    code-block-writer "^13.0.1"
 
 ts-node@10.9.1:
   version "10.9.1"
