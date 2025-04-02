@@ -19,6 +19,8 @@ export async function POST(req: NextRequest) {
   const db = getPrismaClient(env)
   const at = getAtprotoClient(db)
 
+  console.log("GOT HERE")
+
   // Initiate the OAuth flow
   try {
     const url = await at.authorize(handle, {
@@ -26,6 +28,7 @@ export async function POST(req: NextRequest) {
     })
     return NextResponse.json({ redirect: url.toString() })
   } catch (err) {
+    console.log("ERROR:", err)
     return NextResponse.json({error: "oauth authorize failed", details: err, message: err.message})
   }
 }

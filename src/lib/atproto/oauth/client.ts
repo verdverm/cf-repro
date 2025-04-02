@@ -17,7 +17,7 @@ async function loadKeyset() {
 export function getClient(db: any) {
   // info about running server
   const publicUrl = process.env.PUBLIC_URL;
-  const url = publicUrl || 'https://dev.verdverm.com';
+  const url = publicUrl || 'https://tunnel.blebbit.dev';
   const client_id = url + "/client-metadata.json";
 
 

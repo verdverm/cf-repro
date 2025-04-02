@@ -10,7 +10,7 @@ type Session = { did: string }
 
 export async function GET(req: NextRequest) {
   const publicUrl = process.env.PUBLIC_URL;
-  const url = publicUrl || `https://dev.verdverm.com`;
+  const url = publicUrl || `https://tunnel.blebbit.dev`;
 
   // console.log("callback|req:", req)
   const params = new URLSearchParams(req.url.split('?')[1])
